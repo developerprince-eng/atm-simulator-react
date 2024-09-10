@@ -3,6 +3,7 @@
 This is a simple website created for atm-simulator project
 
 ### Technologies
+
 * [React](https://reactjs.org/) - Mainly used to implement clean and reusable html components
 * [EJS6](http://ejs.co/) - Makes JavaScript code much cleaner and easier to read
 * [Axios](https://www.npmjs.com/package/axios) - Used to call REST API in this project
@@ -14,33 +15,46 @@ This is a simple website created for atm-simulator project
 
 ### Running project on MAC OS X
 
-* Clone and go to project by running the following command
-```
-$ git clone git@github.com:Skhwan/atm-simulator-react.git
-$ cd atm-simulator
-```
-
 ###### Yarn
+
 * install all required libraries
-```
-$ yarn install
-```
-* Then start the project
-```
-$ yarn start
+
+```bash
+yarn install
 ```
 
+* Then start the project
+
+```bash
+yarn start
+```
 
 ###### NPM
+
 * install required libraries
 
-```
-$ npm install
-```
-* start project
-```
-$ npm start
+```bash
+npm install
 ```
 
+* start project
+
+```bash
+npm start
+```
+
+###### Docker
+
+* Build Docker Image
+
+```bash
+docker build --tag asba-tesch-atm-simulator-app:latest .
+```
+
+* Run Container Image
+
+```bash
+docker run -d --name atm-simulator-app -p 80:80 asba-tesch-atm-simulator-app:latest
+```
 
 The ATM Simulator website should automatically start on http://localhost:3000.
